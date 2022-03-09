@@ -66,6 +66,11 @@ variable "storage_class_name" {
   description = "Storage class name for EFS CSI driver."
 }
 
+variable "efs_filesystem_id" {
+  type        = string
+  description = "The ID of EFS filesystem."
+}
+
 variable "create_storage_class" {
   type        = bool
   default     = true
