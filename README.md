@@ -68,6 +68,7 @@ Encryption in transit is enabled by default in the master branch version of the 
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| efs_filesystem_id | EFS filesystem ID | `string` | ` ` | yes |
 | create\_namespace | Whether to create k8s namespace with name defined by `namespace`. | `bool` | `true` | no |
 | create\_storage\_class | Whether to create Storage class for EFS CSI driver. | `bool` | `true` | no |
 | enabled | n/a | `bool` | `true` | no |
