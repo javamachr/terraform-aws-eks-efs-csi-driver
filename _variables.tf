@@ -71,6 +71,11 @@ variable "efs_filesystem_id" {
   description = "The ID of EFS filesystem."
 }
 
+variable "efs_ap_name" {
+  type        = string
+  description = "The name of EFS filesystem AP."
+}
+
 variable "create_storage_class" {
   type        = bool
   default     = true
