@@ -5,7 +5,7 @@ resource "kubernetes_storage_class" "storage_class" {
   }
   storage_provisioner = "efs.csi.aws.com"
   parameters = {
-    provisioningMode = "efs-ap # Access point
+    provisioningMode = "efs-ap" # Access point
     directoryPerms   = "700"
     fileSystemId     = var.efs_filesystem_id 
   }
