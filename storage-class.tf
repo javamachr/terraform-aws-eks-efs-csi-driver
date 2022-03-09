@@ -7,6 +7,7 @@ resource "kubernetes_storage_class" "storage_class" {
   parameters = {
     provisioningMode = "efs-ap" # Access point
     directoryPerms   = "700"
+    fileSystemId     = var.efs_filesystem_id 
   }
   depends_on          = [helm_release.kubernetes_efs_csi_driver]
 }
